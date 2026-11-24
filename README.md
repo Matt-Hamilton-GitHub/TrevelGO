@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🏔️ Cabinly
+# 🏔️ TravelGO
 
 **Build your own perfect trip.** Choose a destination, a cabin, and your activities independently, and earn loyalty rewards for every adventure.
 
@@ -8,7 +8,7 @@ A full-stack travel booking platform built with **Next.js 15 (App Router)**, **T
 
 
 <!-- Add a hero screenshot or GIF here: -->
-<!-- ![Cabinly landing page](./docs/hero.png) -->
+<!-- ![TravelGO landing page](./docs/hero.png) -->
 
 </div>
 
@@ -16,7 +16,7 @@ A full-stack travel booking platform built with **Next.js 15 (App Router)**, **T
 
 ## Overview
 
-Most travel sites sell rigid packages. Cabinly lets travellers compose a trip from independent parts:
+Most travel sites sell rigid packages. TravelGO lets travellers compose a trip from independent parts:
 
 1. **Pick a destination** from curated places, filtered by season, type, country and activity.
 2. **Choose a cabin**, from cosy retreats to luxury villas, with live availability.
@@ -153,15 +153,15 @@ Booking created as "pending" ──► confirmation email with signed link
 ### Setup
 
 ```bash
-git clone https://github.com/YOUR-USERNAME/cabinly.git
-cd cabinly
+git clone https://github.com/YOUR-USERNAME/TravelGO.git
+cd TravelGO
 npm install
 ```
 
 Create `.env.local`:
 
 ```bash
-MONGODB_URI=mongodb+srv://<user>:<password>@<cluster>.mongodb.net/cabinly?retryWrites=true&w=majority
+MONGODB_URI=mongodb+srv://<user>:<password>@<cluster>.mongodb.net/TravelGO?retryWrites=true&w=majority
 JWT_SECRET=<a long random string>
 ```
 
@@ -212,4 +212,4 @@ npm run start     # serve the production build
 
 ---
 
-<sub>Cabinly is a portfolio project. Destinations, cabins and reviews are sample data.</sub>
+<sub>TravelGO is a portfolio project. Destinations, cabins and reviews are sample data.</sub>
