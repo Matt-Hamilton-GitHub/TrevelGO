@@ -100,7 +100,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="pt-8 text-center text-[#f9f9f9] text-sm">
-          <p>© 2024 Cabinly Adventures. All rights reserved.</p>
+          <p>© 2024 TravelGO Adventures. All rights reserved.</p>
         </div>
       </div>
     </footer>

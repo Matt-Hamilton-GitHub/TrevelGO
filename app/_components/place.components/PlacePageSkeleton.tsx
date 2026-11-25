@@ -16,7 +16,7 @@ const PlacePageSkeleton = () => {
         to-[#1a5c5e]/90 flex flex-col justify-between px-8 py-6
         overflow-hidden">
 
-        {/* faint decorative mountain so it still feels like Cabinly */}
+        {/* faint decorative mountain so it still feels like TravelGO */}
         <div className="absolute inset-0 flex items-center justify-center
           opacity-[0.06] pointer-events-none">
           <svg width="420" height="420" viewBox="0 0 100 100">

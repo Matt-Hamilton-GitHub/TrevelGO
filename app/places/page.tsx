@@ -52,58 +52,9 @@ const SORTS = [
 const MIN_PRICE = 0
 const MAX_PRICE = 1000
 
-const GLOBAL_CSS = `
-@keyframes plFadeUp {
-  from { opacity: 0; transform: translateY(14px); }
-  to   { opacity: 1; transform: translateY(0); }
-}
-@keyframes plShimmer {
-  0%   { background-position: -200% 0; }
-  100% { background-position: 200% 0; }
-}
-@keyframes plTwinkle {
-  0%, 100% { opacity: .25; transform: scale(.7) rotate(0deg); }
-  50%      { opacity: 1;   transform: scale(1.1) rotate(25deg); }
-}
-@keyframes plSweep {
-  0%   { transform: translateX(-120%) skewX(-20deg); }
-  100% { transform: translateX(260%)  skewX(-20deg); }
-}
-.pl-fade { animation: plFadeUp .55s cubic-bezier(.2,.7,.2,1) both; }
-.pl-shimmer-text {
-  background: linear-gradient(90deg, #b8975a 0%, #fff4d6 50%, #b8975a 100%);
-  background-size: 200% 100%;
-  -webkit-background-clip: text; background-clip: text;
-  color: transparent;
-  animation: plShimmer 6s linear infinite;
-}
-.pl-twinkle { animation: plTwinkle 2.8s ease-in-out infinite; }
-.pl-pill-active { position: relative; overflow: hidden; }
-.pl-pill-active::after {
-  content: '';
-  position: absolute; top: 0; bottom: 0; left: 0; width: 40%;
-  background: linear-gradient(90deg, transparent, rgba(236,220,176,.28), transparent);
-  animation: plSweep 3.2s ease-in-out infinite;
-  pointer-events: none;
-}
-.pl-range { -webkit-appearance: none; appearance: none; height: 6px;
-  border-radius: 999px; outline: none; cursor: pointer; }
-.pl-range::-webkit-slider-thumb {
-  -webkit-appearance: none; appearance: none;
-  width: 22px; height: 22px; border-radius: 999px;
-  background: radial-gradient(circle at 35% 30%, #fff4d6, #c9a96e 70%);
-  border: 2px solid #0f3d3e;
-  box-shadow: 0 0 0 4px rgba(201,169,110,.25), 0 6px 14px -4px rgba(15,61,62,.5);
-  transition: box-shadow .2s;
-}
-.pl-range::-webkit-slider-thumb:hover { box-shadow: 0 0 0 7px rgba(201,169,110,.3), 0 6px 14px -4px rgba(15,61,62,.5); }
-.pl-range::-moz-range-thumb {
-  width: 20px; height: 20px; border-radius: 999px;
-  background: radial-gradient(circle at 35% 30%, #fff4d6, #c9a96e 70%);
-  border: 2px solid #0f3d3e;
-  box-shadow: 0 0 0 4px rgba(201,169,110,.25);
-}
-`
+
+
+
 
 // ─── Sub-components ───────────────────────────────────────────────
 
@@ -272,7 +223,6 @@ const PlacesPage = () => {
 
   return (
     <div className="min-h-screen bg-[#fbfaf6]">
-      <style dangerouslySetInnerHTML={{ __html: GLOBAL_CSS }} />
 
       {/* ── Hero header ── */}
       <div className="relative overflow-hidden bg-gradient-to-b from-[#071f20]

@@ -44,7 +44,7 @@ const spaceGrotesk = Space_Grotesk({
 // const poppins = Poppins({weight: "400", subsets: ["latin"]});
 
 export const metadata: Metadata = {
-  title: "Cabinly",
+  title: "TravelGO",
   description: "Find a place to embrace your human experience",
 };
 

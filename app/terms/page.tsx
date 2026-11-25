@@ -3,22 +3,22 @@ import { Mountain, ArrowLeft } from 'lucide-react'
 
 export default function Terms() {
   const lastUpdated = 'May 1, 2025'
-  const companyName = 'Cabinly'
-  const companyEmail = 'legal@cabinly.com'
+  const companyName = 'TravelGO'
+  const companyEmail = 'legal@TravelGO.com'
   const companyAddress = '123 Alpine Way, Zurich, Switzerland'
 
   const sections = [
     {
       title: '1. Acceptance of Terms',
-      content: `By accessing or using the Cabinly platform, website, or any of our services (collectively, the "Services"), you confirm that you are at least 18 years of age, have read and understood these Terms of Service, and agree to be legally bound by them. If you are using our Services on behalf of a company or other legal entity, you represent that you have the authority to bind that entity to these terms.
+      content: `By accessing or using the TravelGO platform, website, or any of our services (collectively, the "Services"), you confirm that you are at least 18 years of age, have read and understood these Terms of Service, and agree to be legally bound by them. If you are using our Services on behalf of a company or other legal entity, you represent that you have the authority to bind that entity to these terms.
 
 If you do not agree to these terms, please do not access or use our Services.`
     },
     {
       title: '2. Description of Services',
-      content: `Cabinly is an online travel marketplace that connects travellers with handpicked cabin accommodations, local guides, and curated outdoor activities across 120+ destinations worldwide. We act as an intermediary between guests and accommodation providers or activity operators.
+      content: `TravelGO is an online travel marketplace that connects travellers with handpicked cabin accommodations, local guides, and curated outdoor activities across 120+ destinations worldwide. We act as an intermediary between guests and accommodation providers or activity operators.
 
-Cabinly does not own, operate, manage, or control any of the listed properties or activities. We are not responsible for the conduct of hosts, guides, or guests. All bookings are subject to availability and the individual terms of the respective host or operator.`
+TravelGO does not own, operate, manage, or control any of the listed properties or activities. We are not responsible for the conduct of hosts, guides, or guests. All bookings are subject to availability and the individual terms of the respective host or operator.`
     },
     {
       title: '3. User Accounts',
@@ -33,13 +33,13 @@ We reserve the right to suspend or terminate accounts that violate these terms, 
     },
     {
       title: '4. Bookings and Payments',
-      content: `When you make a booking through Cabinly, you enter into a direct agreement with the host or operator for that listing. Cabinly facilitates the transaction but is not a party to the agreement between guest and host.
+      content: `When you make a booking through TravelGO, you enter into a direct agreement with the host or operator for that listing. TravelGO facilitates the transaction but is not a party to the agreement between guest and host.
 
 All prices displayed are in USD unless stated otherwise and include applicable service fees. Taxes may apply depending on your jurisdiction and the destination.
 
 Payment is processed securely through our third-party payment partners. By submitting payment information, you authorize us to charge the applicable fees to your chosen payment method.
 
-Cabinly reserves the right to cancel any booking at its discretion where fraud, misrepresentation, or a violation of these terms is suspected. In such cases, a full refund will be issued to the original payment method.`
+TravelGO reserves the right to cancel any booking at its discretion where fraud, misrepresentation, or a violation of these terms is suspected. In such cases, a full refund will be issued to the original payment method.`
     },
     {
       title: '5. Cancellation and Refund Policy',
@@ -72,11 +72,11 @@ Violation of these conduct rules may result in immediate termination of your acc
     },
     {
       title: '7. Intellectual Property',
-      content: `All content on the Cabinly platform, including but not limited to text, graphics, logos, icons, images, audio clips, and software, is the property of Cabinly or its content suppliers and is protected by applicable intellectual property laws.
+      content: `All content on the TravelGO platform, including but not limited to text, graphics, logos, icons, images, audio clips, and software, is the property of TravelGO or its content suppliers and is protected by applicable intellectual property laws.
 
 You are granted a limited, non-exclusive, non-transferable licence to access and use the Services for personal, non-commercial purposes. You may not reproduce, distribute, modify, create derivative works of, publicly display, or exploit any content from our platform without our express written permission.
 
-User-submitted content such as reviews and photos remains the intellectual property of the submitting user, but by submitting such content you grant Cabinly a worldwide, royalty-free, perpetual licence to use, display, and distribute that content in connection with our Services.`
+User-submitted content such as reviews and photos remains the intellectual property of the submitting user, but by submitting such content you grant TravelGO a worldwide, royalty-free, perpetual licence to use, display, and distribute that content in connection with our Services.`
     },
     {
       title: '8. Reviews and User Content',
@@ -85,26 +85,26 @@ User-submitted content such as reviews and photos remains the intellectual prope
 - The content is accurate and based on your genuine first-hand experience
 - The content does not infringe any third-party intellectual property rights
 - The content does not contain personal attacks, hate speech, or discriminatory language
-- You have the right to grant Cabinly the licence described in Section 7
+- You have the right to grant TravelGO the licence described in Section 7
 
-Cabinly reserves the right to remove any content that violates these guidelines without notice. We do not endorse or verify the accuracy of user-submitted reviews.`
+TravelGO reserves the right to remove any content that violates these guidelines without notice. We do not endorse or verify the accuracy of user-submitted reviews.`
     },
     {
       title: '9. Limitation of Liability',
-      content: `To the fullest extent permitted by applicable law, Cabinly and its officers, directors, employees, and agents shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising out of or related to your use of the Services, including but not limited to:
+      content: `To the fullest extent permitted by applicable law, TravelGO and its officers, directors, employees, and agents shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising out of or related to your use of the Services, including but not limited to:
 
 - Personal injury or property damage of any nature
 - Loss of profits, data, or goodwill
 - Cost of substitute goods or services
 - Any unauthorized access to or alteration of your transmissions or data
 
-Our total liability to you for any claims arising from your use of the Services shall not exceed the total amount paid by you to Cabinly in the 12 months preceding the event giving rise to the claim.
+Our total liability to you for any claims arising from your use of the Services shall not exceed the total amount paid by you to TravelGO in the 12 months preceding the event giving rise to the claim.
 
-These limitations apply regardless of the legal theory under which the claim arises, even if Cabinly has been advised of the possibility of such damages.`
+These limitations apply regardless of the legal theory under which the claim arises, even if TravelGO has been advised of the possibility of such damages.`
     },
     {
       title: '10. Indemnification',
-      content: `You agree to indemnify, defend, and hold harmless Cabinly and its affiliates, officers, directors, employees, and agents from and against any claims, liabilities, damages, losses, costs, and expenses, including reasonable legal fees, arising out of or related to:
+      content: `You agree to indemnify, defend, and hold harmless TravelGO and its affiliates, officers, directors, employees, and agents from and against any claims, liabilities, damages, losses, costs, and expenses, including reasonable legal fees, arising out of or related to:
 
 - Your use of or access to the Services
 - Your violation of these Terms of Service
@@ -113,7 +113,7 @@ These limitations apply regardless of the legal theory under which the claim ari
     },
     {
       title: '11. Third-Party Services',
-      content: `Our platform may contain links to or integrations with third-party websites, services, or applications that are not owned or controlled by Cabinly. We have no control over and assume no responsibility for the content, privacy policies, or practices of any third-party services.
+      content: `Our platform may contain links to or integrations with third-party websites, services, or applications that are not owned or controlled by TravelGO. We have no control over and assume no responsibility for the content, privacy policies, or practices of any third-party services.
 
 We strongly advise you to review the terms and privacy policies of any third-party services you interact with through our platform. Your use of third-party services is governed by their respective terms and not by these Terms of Service.`
     },
@@ -131,13 +131,13 @@ Notwithstanding the foregoing, either party may seek injunctive or other equitab
     },
     {
       title: '14. Modifications to Terms',
-      content: `Cabinly reserves the right to modify these Terms of Service at any time. When we make material changes, we will notify you by email or through a prominent notice on our platform at least 14 days before the changes take effect.
+      content: `TravelGO reserves the right to modify these Terms of Service at any time. When we make material changes, we will notify you by email or through a prominent notice on our platform at least 14 days before the changes take effect.
 
 Your continued use of the Services after the effective date of the revised terms constitutes your acceptance of those terms. If you do not agree to the revised terms, you must discontinue use of the Services and may close your account.`
     },
     {
       title: '15. Termination',
-      content: `Cabinly may terminate or suspend your account and access to the Services at any time, with or without cause, and with or without notice, including if we believe you have violated these Terms of Service.
+      content: `TravelGO may terminate or suspend your account and access to the Services at any time, with or without cause, and with or without notice, including if we believe you have violated these Terms of Service.
 
 Upon termination, your right to use the Services will immediately cease. All provisions of these terms that by their nature should survive termination shall survive, including ownership provisions, warranty disclaimers, indemnity, and limitations of liability.
 
@@ -171,7 +171,7 @@ We aim to respond to all legal enquiries within 5 business days.`
             className="inline-flex items-center gap-2 text-[#e8f0ed]/60
             text-xs mb-8 hover:text-[#e8f0ed] transition-colors">
             <Mountain size={14} className="text-[#a8d5d0]" />
-            Cabinly
+            TravelGO
           </Link>
           <p className="text-[10px] font-medium tracking-[0.25em] uppercase
             text-[#a8d5d0] mb-3">
@@ -194,8 +194,8 @@ We aim to respond to all legal enquiries within 5 business days.`
           p-6 mb-12">
           <p className="text-sm text-gray-600 leading-relaxed">
             Please read these Terms of Service carefully before using the
-            Cabinly platform. These terms constitute a legally binding agreement
-            between you and Cabinly. If you have questions, contact us at{' '}
+            TravelGO platform. These terms constitute a legally binding agreement
+            between you and TravelGO. If you have questions, contact us at{' '}
             <a href={`mailto:${companyEmail}`}
               className="text-[#0f3d3e] font-medium hover:text-[#a8d5d0]
               transition-colors">
@@ -256,7 +256,7 @@ We aim to respond to all legal enquiries within 5 business days.`
             className="flex items-center gap-1.5 text-sm text-gray-400
             hover:text-[#0f3d3e] transition-colors">
             <ArrowLeft size={14} />
-            Back to Cabinly
+            Back to TravelGO
           </Link>
         </div>
       </div>

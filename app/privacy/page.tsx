@@ -3,14 +3,14 @@ import { Mountain, ArrowLeft } from "lucide-react";
 
 export default function Privacy() {
   const lastUpdated = "May 1, 2025";
-  const companyName = "Cabinly";
-  const companyEmail = "privacy@cabinly.com";
+  const companyName = "TravelGO";
+  const companyEmail = "privacy@TravelGO.com";
   const companyAddress = "123 Alpine Way, Zurich, Switzerland";
 
   const sections = [
     {
       title: "1. Who We Are",
-      content: `${companyName} ("we", "our", or "us") operates the Cabinly travel marketplace platform. We are committed to protecting your personal data and respecting your privacy rights in accordance with applicable data protection laws, including the EU General Data Protection Regulation (GDPR) and the Swiss Federal Act on Data Protection (FADP).
+      content: `${companyName} ("we", "our", or "us") operates the TravelGO travel marketplace platform. We are committed to protecting your personal data and respecting your privacy rights in accordance with applicable data protection laws, including the EU General Data Protection Regulation (GDPR) and the Swiss Federal Act on Data Protection (FADP).
 
 Our registered address is ${companyAddress}. For all privacy-related enquiries, contact our Data Protection Officer at ${companyEmail}.`,
     },
@@ -74,7 +74,7 @@ Service Providers
 We work with trusted third-party providers who process data on our behalf, including payment processors, cloud hosting providers, email delivery services, and analytics platforms. All providers are bound by data processing agreements and may only use your data as instructed by us.
 
 Legal and Regulatory Authorities
-We may disclose your data to law enforcement, regulators, or courts when required by law or when necessary to protect the rights, property, or safety of Cabinly, our users, or the public.
+We may disclose your data to law enforcement, regulators, or courts when required by law or when necessary to protect the rights, property, or safety of TravelGO, our users, or the public.
 
 Business Transfers
 In the event of a merger, acquisition, or sale of all or part of our business, your data may be transferred to the acquiring entity. We will notify you before your data becomes subject to a different privacy policy.
@@ -145,7 +145,7 @@ No method of transmission over the internet is 100% secure. While we strive to p
     },
     {
       title: "9. International Transfers",
-      content: `Cabinly operates globally and your data may be transferred to and processed in countries outside your country of residence, including countries that may not provide the same level of data protection as your home country.
+      content: `TravelGO operates globally and your data may be transferred to and processed in countries outside your country of residence, including countries that may not provide the same level of data protection as your home country.
 
 Where we transfer data outside the European Economic Area (EEA) or Switzerland, we ensure appropriate safeguards are in place, including Standard Contractual Clauses (SCCs) approved by the European Commission, or transfers to countries with an adequacy decision.
 
@@ -205,7 +205,7 @@ We aim to respond to all privacy-related enquiries within 30 days. If you are no
             text-xs mb-8 hover:text-[#e8f0ed] transition-colors"
           >
             <Mountain size={14} className="text-[#a8d5d0]" />
-            Cabinly
+            TravelGO
           </Link>
           <p
             className="text-[10px] font-medium tracking-[0.25em] uppercase
@@ -306,7 +306,7 @@ We aim to respond to all privacy-related enquiries within 30 days. If you are no
             hover:text-[#0f3d3e] transition-colors"
           >
             <ArrowLeft size={14} />
-            Back to Cabinly
+            Back to TravelGO
           </Link>
         </div>
       </div>

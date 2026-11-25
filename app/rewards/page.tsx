@@ -195,7 +195,7 @@ export default function RewardsInfo() {
           </h1>
           <p className="text-[#e8f0ed]/55 font-light text-lg leading-relaxed
             max-w-xl">
-            Summit Points are Cabinly&apos;s way of rewarding you for exploring
+            Summit Points are TravelGO&apos;s way of rewarding you for exploring
             the world. Earn them by booking, completing activities, and
             building community. Spend them on gear, upgrades, and experiences
             you won&apos;t find anywhere else.

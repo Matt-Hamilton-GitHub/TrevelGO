@@ -73,7 +73,7 @@ const ServicesSection = () => {
             </h2>
             <p className="text-[#0f3d3e]/55 font-light leading-[1.9] mb-10">
               Forget rigid packages designed for the average traveller.
-              Cabinly lets you choose your destination, your cabin, and your
+              TravelGO lets you choose your destination, your cabin, and your
               activities independently — so the price and the experience are
               exactly right for you, not someone else.
             </p>

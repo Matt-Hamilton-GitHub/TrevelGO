@@ -1,64 +1,74 @@
-'use client'
+"use client";
 
-import Link from 'next/link'
-import Image from 'next/image'
-import { useRouter, usePathname } from 'next/navigation'
-import {  LogOut, User, Menu, X, Zap } from 'lucide-react'
-import { useState } from 'react'
-import cabinlyLogo from '../../public/_assets/icon.png'
-import { useUserContext } from '../contexts/UserContext'
-import { useUserProfile } from '../_hooks/useUserProfile'
-import { TierType } from '@/app/lib/types'
+import Link from "next/link";
+import Image from "next/image";
+import { useRouter, usePathname } from "next/navigation";
+import { LogOut, User, Menu, X, Zap } from "lucide-react";
+import { useState } from "react";
+import TravelGOLogo from "../../public/_assets/icon.png";
+import { useUserContext } from "../contexts/UserContext";
+import { useUserProfile } from "../_hooks/useUserProfile";
+import { TierType } from "@/app/lib/types";
 
 const TIER_COLORS: Record<TierType, string> = {
-  Explorer:   'bg-[#e1f5ee] text-[#085041]',
-  Adventurer: 'bg-[#faeeda] text-[#633806]',
-  Pioneer:    'bg-[#e8e1fa] text-[#3d0663]',
-  Summit:     'bg-[#a8d5d0] text-[#0f3d3e]',
-}
+  Explorer: "bg-[#e1f5ee] text-[#085041]",
+  Adventurer: "bg-[#faeeda] text-[#633806]",
+  Pioneer: "bg-[#e8e1fa] text-[#3d0663]",
+  Summit: "bg-[#a8d5d0] text-[#0f3d3e]",
+};
 
 const NAV_LINKS = [
-  { href: '/places',     label: 'Destinations' },
-  { href: '/activities', label: 'Activities' },
-  { href: '/guides',      label: 'Our Guides' },
-]
+  { href: "/places", label: "Destinations" },
+  { href: "/activities", label: "Activities" },
+  { href: "/guides", label: "Our Guides" },
+];
 
 export default function Navbar() {
-  const { authUser, setAuthUser, isValidating } = useUserContext()
-  const { data: profile } = useUserProfile()   // ← full profile, cached
-  const router   = useRouter()
-  const pathname = usePathname()
-  const [mobileOpen, setMobileOpen] = useState(false)
+  const { authUser, setAuthUser, isValidating } = useUserContext();
+  const { data: profile } = useUserProfile(); // ← full profile, cached
+  const router = useRouter();
+  const pathname = usePathname();
+  const [mobileOpen, setMobileOpen] = useState(false);
 
   const handleLogout = async () => {
-    await fetch('/api/user/logout', { method: 'POST' })
-    setAuthUser(null)
-    router.push('/')
-  }
+    await fetch("/api/user/logout", { method: "POST" });
+    setAuthUser(null);
+    router.push("/");
+  };
 
-  const isActive = (href: string) => pathname === href
+  const isActive = (href: string) => pathname === href;
 
   return (
-    <nav className="sticky top-0 z-50 bg-[#0f3d3e] border-b
-      border-[#e8f0ed]/08">
-      <div className="max-w-7xl mx-auto px-6 h-16 flex items-center
-        justify-between">
-
+    <nav
+      className="sticky top-0 z-50 bg-[#0f3d3e] border-b
+      border-[#e8f0ed]/08"
+    >
+      <div
+        className="max-w-7xl mx-auto px-6 h-16 flex items-center
+        justify-between"
+      >
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2 flex-shrink-0">
-          <div className="w-8 h-8 rounded-lg flex items-center
-            justify-center overflow-hidden">
-            <Image
-              src={cabinlyLogo}
-              alt="Cabinly"
+          <div
+            className="w-8 h-8 rounded-lg flex items-center
+            justify-center overflow-hidden"
+          >
+            {/* <Image
+              src={TravelGOLogo}
+              alt="TravelGO"
               width={32}
               height={32}
               className="object-cover"
-            />
+            /> */}
           </div>
-          <span className="text-[#e8f0ed] font-medium text-base">
-            Cabinly
-          </span>
+          <div className="flex items-center gap-3.5">
+            <span className="font-serif text-[22px] font-semibold tracking-wide text-[#e8f0ed]">
+              Travel
+            </span>
+            <span className="font-serif text-[18px] font-bold tracking-[2px] border border-[#c9a96e] px-3 py-1 text-[#c9a96e] pl-shimmer-text ">
+              GO
+            </span>
+          </div>
         </Link>
 
         {/* Desktop nav links */}
@@ -69,8 +79,8 @@ export default function Navbar() {
               href={href}
               className={`px-4 py- rounded-xl text-sm transition-colors ${
                 isActive(href)
-                  ? 'bg-[#e8f0ed]/10 text-[#e8f0ed]'
-                  : 'text-[#e8f0ed]/60 hover:text-[#e8f0ed] hover:bg-[#e8f0ed]/05'
+                  ? "bg-[#e8f0ed]/10 text-[#e8f0ed]"
+                  : "text-[#e8f0ed]/60 hover:text-[#e8f0ed] hover:bg-[#e8f0ed]/05"
               }`}
             >
               {label}
@@ -81,16 +91,20 @@ export default function Navbar() {
         {/* Right side */}
         <div className="hidden md:flex items-center gap-3">
           {isValidating ? (
-            <div className="w-5 h-5 rounded-full border-2
-              border-[#e8f0ed]/20 border-t-[#a8d5d0] animate-spin" />
+            <div
+              className="w-5 h-5 rounded-full border-2
+              border-[#e8f0ed]/20 border-t-[#a8d5d0] animate-spin"
+            />
           ) : authUser ? (
             <>
               {/* Points — from profile, falls back gracefully */}
-              <div className="flex items-center gap-1.5 px-3 py-1.5
-                bg-[#e8f0ed]/08 border-2 border-[#c66f19fc] rounded-xl">
+              <div
+                className="flex items-center gap-1.5 px-3 py-1.5
+                bg-[#e8f0ed]/08 border-2 border-[#c66f19fc] rounded-xl"
+              >
                 <Zap size={13} className="text-[#a8d5d0]" />
                 <span className="text-xs font-medium text-[#d5d3a8]">
-                  {profile?.points?.toLocaleString() ?? '—'} pts
+                  {profile?.points?.toLocaleString() ?? "—"} pts
                 </span>
               </div>
 
@@ -106,18 +120,18 @@ export default function Navbar() {
               <Link
                 href={`/user/${authUser.userId}`}
                 className={`flex items-center gap-2  transition-colors ${
-                    isActive('/user')
-                      ? 'bg-[#e8f0ed]/10 border-[#e8f0ed]/20 text-[#e8f0ed]'
-                      : 'border-[#e8f0ed]/15 text-[#e8f0ed]/70 hover:text-[#e8f0ed] hover:scale-110 '
-                  }`}
+                  isActive("/user")
+                    ? "bg-[#e8f0ed]/10 border-[#e8f0ed]/20 text-[#e8f0ed]"
+                    : "border-[#e8f0ed]/15 text-[#e8f0ed]/70 hover:text-[#e8f0ed] hover:scale-110 "
+                }`}
               >
-                 
-                  <div className="w-7 h-7 rounded-full bg-[#a8d5d0]/20
-                    flex items-center justify-center shadow-inner shadow-[#064d3e] hover:shadow-[#9c670c] transition-all ">
-                    <User size={15} className="text-[#ffffff]" />
-                  </div>
-                
-                {authUser?.name?.split(' ')[0] ?? ""}  {/* first name only */}
+                <div
+                  className="w-7 h-7 rounded-full bg-[#a8d5d0]/20
+                    flex items-center justify-center shadow-inner shadow-[#064d3e] hover:shadow-[#9c670c] transition-all "
+                >
+                  <User size={15} className="text-[#ffffff]" />
+                </div>
+                {authUser?.name?.split(" ")[0] ?? ""} {/* first name only */}
               </Link>
 
               {/* Logout */}
@@ -164,8 +178,10 @@ export default function Navbar() {
 
       {/* Mobile menu */}
       {mobileOpen && (
-        <div className="md:hidden bg-[#0a2e2f] border-t border-[#e8f0ed]/08
-          px-6 py-4 space-y-1">
+        <div
+          className="md:hidden bg-[#0a2e2f] border-t border-[#e8f0ed]/08
+          px-6 py-4 space-y-1"
+        >
           {NAV_LINKS.map(({ href, label }) => (
             <Link
               key={href}
@@ -174,8 +190,8 @@ export default function Navbar() {
               className={`block px-4 py-2.5 rounded-xl text-sm
                 transition-colors ${
                   isActive(href)
-                    ? 'bg-[#e8f0ed]/10 text-[#e8f0ed]'
-                    : 'text-[#e8f0ed]/60 hover:text-[#e8f0ed]'
+                    ? "bg-[#e8f0ed]/10 text-[#e8f0ed]"
+                    : "text-[#e8f0ed]/60 hover:text-[#e8f0ed]"
                 }`}
             >
               {label}
@@ -191,13 +207,15 @@ export default function Navbar() {
                   </span>
                   <div className="flex items-center gap-2">
                     {profile?.tier && (
-                      <span className={`text-[10px] font-medium px-2 py-0.5
-                        rounded-full ${TIER_COLORS[profile.tier]}`}>
+                      <span
+                        className={`text-[10px] font-medium px-2 py-0.5
+                        rounded-full ${TIER_COLORS[profile.tier]}`}
+                      >
                         {profile.tier}
                       </span>
                     )}
                     <span className="text-xs text-[#a8d5d0]">
-                      {profile?.points?.toLocaleString() ?? '—'} pts
+                      {profile?.points?.toLocaleString() ?? "—"} pts
                     </span>
                   </div>
                 </div>
@@ -210,7 +228,10 @@ export default function Navbar() {
                   My Account
                 </Link>
                 <button
-                  onClick={() => { handleLogout(); setMobileOpen(false) }}
+                  onClick={() => {
+                    handleLogout();
+                    setMobileOpen(false);
+                  }}
                   className="w-full text-left px-4 py-2.5 rounded-xl text-sm
                     text-[#e8f0ed]/60 hover:text-[#e8f0ed] transition-colors"
                 >
@@ -242,5 +263,5 @@ export default function Navbar() {
         </div>
       )}
     </nav>
-  )
+  );
 }

@@ -46,7 +46,7 @@ export default function About() {
     {
       icon: <Shield size={18} />,
       title: 'Verified and trusted',
-      desc: 'Every cabin, guide, and activity on Cabinly is personally vetted by our team before going live.',
+      desc: 'Every cabin, guide, and activity on TravelGO is personally vetted by our team before going live.',
     },
     {
       icon: <Users size={18} />,
@@ -91,7 +91,7 @@ export default function About() {
           </h1>
           <p className="text-[#e8f0ed]/60 font-light text-lg leading-relaxed
             max-w-xl mx-auto">
-            Cabinly was built for travellers who are done with generic hotel
+            TravelGO was built for travellers who are done with generic hotel
             rooms and tourist traps — people who want to wake up to a glacier
             view, hike with someone who grew up on that mountain, and come home
             changed.
@@ -133,7 +133,7 @@ export default function About() {
               landscape. Forgettable experience.
             </p>
             <p className="text-sm text-gray-500 leading-relaxed">
-              Cabinly was the answer to that trip. A platform where every cabin
+              TravelGO was the answer to that trip. A platform where every cabin
               is chosen by a human, every guide is a local, and every experience
               is designed to make you feel like you actually went somewhere —
               not just passed through it.
@@ -184,7 +184,7 @@ export default function About() {
               The process
             </p>
             <h2 className="font-serif text-3xl text-[#0f3d3e]">
-              How Cabinly works
+              How TravelGO works
             </h2>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">

@@ -145,7 +145,7 @@ export default function SignUp() {
           >
             <Mountain size={16} className="text-[#0f3d3e]" />
           </div>
-          <span className="text-[#e8f0ed] font-medium text-lg">Cabinly</span>
+          <span className="text-[#e8f0ed] font-medium text-lg">TravelGO</span>
         </div>
 
         {/* Center content */}
@@ -205,7 +205,7 @@ export default function SignUp() {
           >
             <Mountain size={16} className="text-[#a8d5d0]" />
           </div>
-          <span className="text-[#0f3d3e] font-medium text-lg">Cabinly</span>
+          <span className="text-[#0f3d3e] font-medium text-lg">TravelGO</span>
         </div>
 
         <div className="w-full max-w-sm">

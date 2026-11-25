@@ -109,9 +109,9 @@ export default function Error({
         {/* Bottom hint */}
         <p className="text-gray-300 text-xs font-light mt-12">
           If this keeps happening, contact us at{' '}
-          <a href="mailto:support@cabinly.com"
+          <a href="mailto:support@TravelGO.com"
             className="text-[#a8d5d0] hover:text-[#ffffff] transition-colors">
-            support@cabinly.com
+            support@TravelGO.com
           </a>
         </p>
       </div>

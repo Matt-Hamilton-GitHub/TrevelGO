@@ -170,7 +170,7 @@ const MeetLocalsSection = () => {
             Meet your local guides
           </h2>
           <p className="text-[#0f3d3e]/55 max-w-xl mx-auto font-light leading-relaxed">
-            Every guide on Cabinly is born where they work. They don&apos;t read
+            Every guide on TravelGO is born where they work. They don&apos;t read
             from a script — they grew up on these mountains, fjords, and
             plains and want to show you what the guidebooks miss.
           </p>
