@@ -1,11 +1,9 @@
 "use client";
 
 import Link from "next/link";
-import Image from "next/image";
 import { useRouter, usePathname } from "next/navigation";
 import { LogOut, User, Menu, X, Zap } from "lucide-react";
 import { useState } from "react";
-import TravelGOLogo from "../../public/_assets/icon.png";
 import { useUserContext } from "../contexts/UserContext";
 import { useUserProfile } from "../_hooks/useUserProfile";
 import { TierType } from "@/app/lib/types";
@@ -53,13 +51,7 @@ export default function Navbar() {
             className="w-8 h-8 rounded-lg flex items-center
             justify-center overflow-hidden"
           >
-            {/* <Image
-              src={TravelGOLogo}
-              alt="TravelGO"
-              width={32}
-              height={32}
-              className="object-cover"
-            /> */}
+            
           </div>
           <div className="flex items-center gap-3.5">
             <span className="font-serif text-[22px] font-semibold tracking-wide text-[#e8f0ed]">

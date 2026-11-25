@@ -97,7 +97,7 @@ type TPlace = {
   guides: GuideType[]
   reviews: ReviewType[]
   availableDates: AvailableDateType[]
-  // ...
+  // ...a
 }
 ```
 
